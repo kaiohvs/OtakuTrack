@@ -1,0 +1,6 @@
+@OtakuTrack.Api_HostAddress = http://localhost:5264
+
+GET {{OtakuTrack.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

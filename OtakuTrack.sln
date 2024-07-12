@@ -3,7 +3,71 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtakuTrack.Api", "OtakuTrack.Api\OtakuTrack.Api.csproj", "{B7F8BEEB-E23B-4F29-832E-BF610EBF5FB1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{981F18FC-6A8D-428B-A8C5-5ACA5B6A7703} = {981F18FC-6A8D-428B-A8C5-5ACA5B6A7703}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtakuTrack.Services", "OtakuTrack.Services\OtakuTrack.Services.csproj", "{981F18FC-6A8D-428B-A8C5-5ACA5B6A7703}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D} = {CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtakuTrack.Repositories", "OtakuTrack.Repositories\OtakuTrack.Repositories.csproj", "{CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C675833F-CF65-4D2C-BDD7-A912C8DFF0B5} = {C675833F-CF65-4D2C-BDD7-A912C8DFF0B5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtakuTrack.Domain", "OtakuTrack.Domain\OtakuTrack.Domain.csproj", "{AEF5B5FA-D155-4502-B882-BD2219F03B44}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6FF0D8A2-FEE4-4FBF-BFCB-F62A4624B181} = {6FF0D8A2-FEE4-4FBF-BFCB-F62A4624B181}
+		{981F18FC-6A8D-428B-A8C5-5ACA5B6A7703} = {981F18FC-6A8D-428B-A8C5-5ACA5B6A7703}
+		{B7F8BEEB-E23B-4F29-832E-BF610EBF5FB1} = {B7F8BEEB-E23B-4F29-832E-BF610EBF5FB1}
+		{C675833F-CF65-4D2C-BDD7-A912C8DFF0B5} = {C675833F-CF65-4D2C-BDD7-A912C8DFF0B5}
+		{CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D} = {CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtakuTrack.Infrastructure", "OtakuTrack.Infrastructure\OtakuTrack.Infrastructure.csproj", "{C675833F-CF65-4D2C-BDD7-A912C8DFF0B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtakuTrack.Common", "OtakuTrack.Common\OtakuTrack.Common.csproj", "{6FF0D8A2-FEE4-4FBF-BFCB-F62A4624B181}"
+	ProjectSection(ProjectDependencies) = postProject
+		{981F18FC-6A8D-428B-A8C5-5ACA5B6A7703} = {981F18FC-6A8D-428B-A8C5-5ACA5B6A7703}
+		{B7F8BEEB-E23B-4F29-832E-BF610EBF5FB1} = {B7F8BEEB-E23B-4F29-832E-BF610EBF5FB1}
+		{C675833F-CF65-4D2C-BDD7-A912C8DFF0B5} = {C675833F-CF65-4D2C-BDD7-A912C8DFF0B5}
+		{CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D} = {CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D}
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7F8BEEB-E23B-4F29-832E-BF610EBF5FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F8BEEB-E23B-4F29-832E-BF610EBF5FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F8BEEB-E23B-4F29-832E-BF610EBF5FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F8BEEB-E23B-4F29-832E-BF610EBF5FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981F18FC-6A8D-428B-A8C5-5ACA5B6A7703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981F18FC-6A8D-428B-A8C5-5ACA5B6A7703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981F18FC-6A8D-428B-A8C5-5ACA5B6A7703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981F18FC-6A8D-428B-A8C5-5ACA5B6A7703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDB7E03-DB29-42F2-89DF-32E0EFDCDE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF5B5FA-D155-4502-B882-BD2219F03B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF5B5FA-D155-4502-B882-BD2219F03B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF5B5FA-D155-4502-B882-BD2219F03B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF5B5FA-D155-4502-B882-BD2219F03B44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C675833F-CF65-4D2C-BDD7-A912C8DFF0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C675833F-CF65-4D2C-BDD7-A912C8DFF0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C675833F-CF65-4D2C-BDD7-A912C8DFF0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C675833F-CF65-4D2C-BDD7-A912C8DFF0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF0D8A2-FEE4-4FBF-BFCB-F62A4624B181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF0D8A2-FEE4-4FBF-BFCB-F62A4624B181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF0D8A2-FEE4-4FBF-BFCB-F62A4624B181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF0D8A2-FEE4-4FBF-BFCB-F62A4624B181}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
