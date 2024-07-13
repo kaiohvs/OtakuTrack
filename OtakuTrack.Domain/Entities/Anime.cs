@@ -12,5 +12,9 @@
 
         // Lista de avaliações para este anime
         public ICollection<Review> Reviews { get; set; }
+
+        // Lista de episódios para este anime
+        public ICollection<Episode> EpisodesList { get; set; } // Adiciona a coleção de episódios
+
     }
 }

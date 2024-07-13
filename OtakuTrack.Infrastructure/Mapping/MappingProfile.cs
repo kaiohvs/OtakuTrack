@@ -14,6 +14,11 @@ namespace OtakuTrack.Infrastructure.Mapping
             //    .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.User.Username));
             CreateMap<CreateAnimeDTO, Anime>();
             CreateMap<UpdateAnimeDTO, Anime>();
+
+            // Episode mappings
+            CreateMap<Episode, EpisodeDTO>();
+            CreateMap<CreateEpisodeDTO, Episode>();
+            CreateMap<UpdateEpisodeDTO, Episode>();
         }
     }
 }
