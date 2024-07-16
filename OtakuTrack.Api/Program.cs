@@ -25,10 +25,14 @@ builder.Services.AddAutoMapper(typeof(MappingProfile)); // Adiciona AutoMapper e
 // Configurar repositórios
 builder.Services.AddScoped<IAnimeRepository, AnimeRepository>();
 builder.Services.AddScoped<IErrorLogRepository, ErrorLogRepository>();
+builder.Services.AddScoped<IEpisodeRepository, EpisodeRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Configurar serviços
 builder.Services.AddScoped<IAnimeService, AnimeService>();
 builder.Services.AddScoped<IErrorLogService, ErrorLogService>();
+builder.Services.AddScoped<IEpisodeService, EpisodeService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 // Add services to the container.
 

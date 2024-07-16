@@ -6,7 +6,7 @@ namespace OtakuTrack.Domain.DTOs
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public string Description { get; set; }
+        public string Synopsis { get; set; }
         public int EpisodeNumber { get; set; }
         public DateTime ReleaseDate { get; set; }
         public int AnimeId { get; set; }
@@ -15,7 +15,7 @@ namespace OtakuTrack.Domain.DTOs
     public class CreateEpisodeDTO
     {
         public string Title { get; set; }
-        public string Description { get; set; }
+        public string Synopsis { get; set; }
         public int EpisodeNumber { get; set; }
         public DateTime ReleaseDate { get; set; }
         public int AnimeId { get; set; }
@@ -24,7 +24,7 @@ namespace OtakuTrack.Domain.DTOs
     public class UpdateEpisodeDTO
     {        
         public string Title { get; set; }
-        public string Description { get; set; }
+        public string Synopsis { get; set; }
         public int EpisodeNumber { get; set; }
         public DateTime ReleaseDate { get; set; }
         public int AnimeId { get; set; }

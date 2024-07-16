@@ -9,9 +9,7 @@ namespace OtakuTrack.Infrastructure.Mapping
         public MappingProfile()
         {
             CreateMap<Anime, AnimeDTO>()
-                 .ForMember(dest => dest.GenreId, opt => opt.MapFrom(src => src.GenreId));
-            //CreateMap<Review, ReviewDTO>()
-            //    .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.User.Username));
+                 .ForMember(dest => dest.GenreId, opt => opt.MapFrom(src => src.GenreId));           
             CreateMap<CreateAnimeDTO, Anime>();
             CreateMap<UpdateAnimeDTO, Anime>();
 
@@ -19,6 +17,11 @@ namespace OtakuTrack.Infrastructure.Mapping
             CreateMap<Episode, EpisodeDTO>();
             CreateMap<CreateEpisodeDTO, Episode>();
             CreateMap<UpdateEpisodeDTO, Episode>();
+
+            // User mappings
+            CreateMap<User, UserDTO>();
+            CreateMap<CreateUserDTO, User>();
+            CreateMap<UpdateUserDTO, User>();
         }
     }
 }
