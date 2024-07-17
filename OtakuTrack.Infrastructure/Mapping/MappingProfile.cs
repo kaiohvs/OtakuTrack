@@ -22,6 +22,16 @@ namespace OtakuTrack.Infrastructure.Mapping
             CreateMap<User, UserDTO>();
             CreateMap<CreateUserDTO, User>();
             CreateMap<UpdateUserDTO, User>();
+
+            // Review mappings
+            CreateMap<Review, ReviewDTO>();
+            CreateMap<CreateReviewDTO, Review>();
+            CreateMap<UpdateReviewDTO, Review>();
+
+            // Genre mappings
+            CreateMap<Genre, GenreDTO>();
+            CreateMap<CreateGenreDTO, Genre>();
+            CreateMap<UpdateGenreDTO, Genre>();
         }
     }
 }

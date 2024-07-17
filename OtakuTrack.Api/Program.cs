@@ -27,12 +27,16 @@ builder.Services.AddScoped<IAnimeRepository, AnimeRepository>();
 builder.Services.AddScoped<IErrorLogRepository, ErrorLogRepository>();
 builder.Services.AddScoped<IEpisodeRepository, EpisodeRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
+builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 
 // Configurar serviços
 builder.Services.AddScoped<IAnimeService, AnimeService>();
 builder.Services.AddScoped<IErrorLogService, ErrorLogService>();
 builder.Services.AddScoped<IEpisodeService, EpisodeService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IReviewService, ReviewService>();
+builder.Services.AddScoped<IGenreService, GenreService>();
 
 // Add services to the container.
 
