@@ -16,12 +16,18 @@ namespace OtakuTrack.Repositories.Implementations
 
         public async Task<IEnumerable<Review>> GetAllAsync()
         {
-            return await _context.Reviews.ToListAsync();
+            return await _context.Reviews
+                .Include(r => r.Anime)
+                .Include(r => r.User)
+                .ToListAsync();
         }
 
         public async Task<Review> GetByIdAsync(int id)
         {
-            return await _context.Reviews.FindAsync(id);
+            return await _context.Reviews
+                .Include(r => r.Anime)
+                .Include(r => r.User)
+                .FirstOrDefaultAsync(r => r.Id == id);
         }
 
         public async Task AddAsync(Review entity)
